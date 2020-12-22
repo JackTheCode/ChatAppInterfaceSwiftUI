@@ -11,6 +11,11 @@
 		DAAF0485258C8C14007EE2F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAF0484258C8C14007EE2F3 /* ContentView.swift */; };
 		DAAF0487258C8C18007EE2F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAAF0486258C8C18007EE2F3 /* Assets.xcassets */; };
 		DAAF048A258C8C18007EE2F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAAF0489258C8C18007EE2F3 /* Preview Assets.xcassets */; };
+		DAAF049E258C8D47007EE2F3 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAF049D258C8D47007EE2F3 /* ChatBubble.swift */; };
+		DAAF04A1258C8DC0007EE2F3 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAF04A0258C8DC0007EE2F3 /* AppConstants.swift */; };
+		DAAF04A4258C9C9A007EE2F3 /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAF04A3258C9C9A007EE2F3 /* CustomScrollView.swift */; };
+		DAAF04A8258CBB04007EE2F3 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAF04A7258CBB04007EE2F3 /* ChatModel.swift */; };
+		DAAF04AB258CBB15007EE2F3 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAF04AA258CBB15007EE2F3 /* Chat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		DAAF0486258C8C18007EE2F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAAF0489258C8C18007EE2F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DAAF048B258C8C18007EE2F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAAF049D258C8D47007EE2F3 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		DAAF04A0258C8DC0007EE2F3 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		DAAF04A3258C9C9A007EE2F3 /* CustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
+		DAAF04A7258CBB04007EE2F3 /* ChatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		DAAF04AA258CBB15007EE2F3 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +62,15 @@
 		DAAF0481258C8C14007EE2F3 /* ChatAppInterfaceSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DAAF0493258C8C65007EE2F3 /* Model */,
+				DAAF0494258C8C66007EE2F3 /* View */,
+				DAAF0492258C8C65007EE2F3 /* ViewModel */,
 				DAAF0482258C8C14007EE2F3 /* ChatAppInterfaceSwiftUIApp.swift */,
 				DAAF0484258C8C14007EE2F3 /* ContentView.swift */,
 				DAAF0486258C8C18007EE2F3 /* Assets.xcassets */,
 				DAAF048B258C8C18007EE2F3 /* Info.plist */,
 				DAAF0488258C8C18007EE2F3 /* Preview Content */,
+				DAAF04A0258C8DC0007EE2F3 /* AppConstants.swift */,
 			);
 			path = ChatAppInterfaceSwiftUI;
 			sourceTree = "<group>";
@@ -67,6 +81,31 @@
 				DAAF0489258C8C18007EE2F3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DAAF0492258C8C65007EE2F3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DAAF0493258C8C65007EE2F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DAAF04A7258CBB04007EE2F3 /* ChatModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DAAF0494258C8C66007EE2F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DAAF049D258C8D47007EE2F3 /* ChatBubble.swift */,
+				DAAF04A3258C9C9A007EE2F3 /* CustomScrollView.swift */,
+				DAAF04AA258CBB15007EE2F3 /* Chat.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +179,11 @@
 			files = (
 				DAAF0485258C8C14007EE2F3 /* ContentView.swift in Sources */,
 				DAAF0483258C8C14007EE2F3 /* ChatAppInterfaceSwiftUIApp.swift in Sources */,
+				DAAF04AB258CBB15007EE2F3 /* Chat.swift in Sources */,
+				DAAF04A4258C9C9A007EE2F3 /* CustomScrollView.swift in Sources */,
+				DAAF049E258C8D47007EE2F3 /* ChatBubble.swift in Sources */,
+				DAAF04A1258C8DC0007EE2F3 /* AppConstants.swift in Sources */,
+				DAAF04A8258CBB04007EE2F3 /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
